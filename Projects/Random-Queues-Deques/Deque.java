@@ -1,3 +1,9 @@
+//Okeefe Niemann
+//9/20/2015
+
+//Creates a generic doubly-linked queue with a generic iterator
+
+
 //import edu.princeton.cs.algs4.StdOut;
 import java.util.Iterator;
 
@@ -129,7 +135,8 @@ public class Deque<Item> implements Iterable<Item> {
       }
    }
 
-/*
+
+   //prints the queue using the Deque's iterator
    public void printQueue() {
       Iterator itr = iterator();
 
@@ -140,7 +147,7 @@ public class Deque<Item> implements Iterable<Item> {
       
       System.out.println("");
    }
-*/
+
 
    //unit testing        
    public static void main(String[] args) {

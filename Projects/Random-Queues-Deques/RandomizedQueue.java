@@ -1,3 +1,8 @@
+//Okeefe Niemann
+//9/20/2015
+//Creates a Queue whose indices are randomized by the corresponding iterator.
+//Everything retrieved from the Queue is randomized.
+
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdOut;
 import java.util.Iterator;
@@ -31,7 +36,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
       size++;   
    }
 
-   //remove and return a random item
+   //removes and returns a random item
    public Item dequeue() {
       if (isEmpty()) throw new java.util.NoSuchElementException();
 
@@ -45,7 +50,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
       return item;      
    }
 
-   //return (but do not remove) a random item
+   //return (but does not remove) a random item
    public Item sample() {
       if (isEmpty()) throw new java.util.NoSuchElementException();
       int rand = StdRandom.uniform(size);
@@ -93,7 +98,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
       }
    }
 
-/*
+   //Prints the queue
    public void printQueue() {
       Iterator itr = iterator();
 
@@ -104,7 +109,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
    
       System.out.println("");
    }
-*/
+
 
    //unit testing
    public static void main(String[] args) {

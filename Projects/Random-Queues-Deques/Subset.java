@@ -1,3 +1,12 @@
+//Okeefe Niemann
+//9/20/2015
+
+//Implementation of randomized queue. Accepts all arguments in the command line
+//and randomly prints out a specified amount of them.
+
+//e.g. StdIn: AA BB CC DD EE | java-algs4 Subset 3
+//     StdOut: BB EE AA
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
